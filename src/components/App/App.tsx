@@ -78,7 +78,7 @@ function App() {
         setContinentCodeToCountriesMap(
           constructContinentCodeToCountriesMap({
             countries: response.data.countries,
-            continents: response.data.continents
+            continents: response.data.continents,
           })
         );
         if (languageCodeToLanguageMap) {
@@ -134,6 +134,12 @@ function App() {
       {!isLoading && (
         <div>
           <div className="form-field continent-selector">
+            {/*
+            As far as my understanding goes, if we have to add a filter to restrict the countries by language, languages will become the independent variables.
+            So, there will be two independent variables in the system; continent, language.
+            There will be one dependent variable; country.
+            Based on the country chosen, we have to *show* (as list on the DOM, not within a select) the list of languages spoken in that country.
+            */}
             <span className="label">Continent</span>:
             <Dropdown
               className="form-element"
