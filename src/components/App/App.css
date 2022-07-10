@@ -1,0 +1,32 @@
+.App {
+  padding-top: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.countries-selector {
+  margin-top: 10px;
+}
+
+.form-field .label {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+
+.form-field .form-element {
+  margin-left: 10px;
+}
+
+.language-list {
+  margin-top: 30px;
+}
